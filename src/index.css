@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    /* Grainwise Color Palette */
+    --alabaster: 40 33.3% 93.5%; /* #F5F0E8 */
+    --deep-slate: 190 8.5% 31.6%; /* #4A5759 */
+    --harvest-gold: 28 62.6% 55.9%; /* #D68C45 */
+    /* Core Colors */
+    --background: var(--alabaster);
+    --foreground: var(--deep-slate);
+    --primary: var(--deep-slate);
+    --primary-foreground: var(--alabaster);
+    --muted: 39 21.4% 88.4%;
+    --muted-foreground: 190 7.5% 41.6%;
+    --border: 39 15.4% 85.4%;
+    --ring: var(--harvest-gold);
+    --card: var(--alabaster);
+    --card-foreground: var(--deep-slate);
+    --popover: var(--alabaster);
+    --popover-foreground: var(--deep-slate);
+    --secondary: 39 21.4% 88.4%;
+    --secondary-foreground: var(--deep-slate);
+    --accent: var(--harvest-gold);
+    --accent-foreground: var(--alabaster);
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --input: 39 15.4% 85.4%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  .dark {
+    /* Dark Theme Palette (Inverted for contrast) */
+    --alabaster: 190 8.5% 15%; /* Darker slate */
+    --deep-slate: 40 33.3% 93.5%; /* Lighter alabaster */
+    --harvest-gold: 28 62.6% 55.9%; /* Accent remains */
+    --background: var(--alabaster);
+    --foreground: var(--deep-slate);
+    --primary: var(--deep-slate);
+    --primary-foreground: var(--alabaster);
+    --muted: 190 8.5% 20%;
+    --muted-foreground: 40 10% 70%;
+    --border: 190 8.5% 25%;
+    --ring: var(--harvest-gold);
+    --card: var(--alabaster);
+    --card-foreground: var(--deep-slate);
+    --popover: var(--alabaster);
+    --popover-foreground: var(--deep-slate);
+    --secondary: 190 8.5% 20%;
+    --secondary-foreground: var(--deep-slate);
+    --accent: var(--harvest-gold);
+    --accent-foreground: 0 0% 10%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --input: 190 8.5% 25%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    text-rendering: optimizeLegibility;
+  }
+}
