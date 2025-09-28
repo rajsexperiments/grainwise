@@ -22,7 +22,7 @@ export const AboutPage: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <img src="./src/components/ui/we.png" alt="we" className="rounded-lg shadow-2xl w-full h-auto object-cover" />
+          <img src="./shttps://drive.google.com/file/d/10d8iA70K8R2s-GszCfkxp8WNCLxKbQAQ/view?usp=sharing" alt="we" className="rounded-lg shadow-2xl w-full h-auto object-cover" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 20 }}
