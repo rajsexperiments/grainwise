@@ -22,7 +22,7 @@ export const AboutPage: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <img src="https://images.unsplash.com/photo-1627689496159-fb6a62b4343b?q=80&w=800&auto=format&fit=crop" alt="Field of millet" className="rounded-lg shadow-2xl w-full h-auto object-cover" />
+          <img src="./src/components/ui/we.png" alt="Field of millet" className="rounded-lg shadow-2xl w-full h-auto object-cover" />
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: 20 }}
