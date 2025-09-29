@@ -4,7 +4,7 @@
  */
  {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "v1-grainwise-c61e273d-9e7b-4c11-beaf-c92b6a4ecac2",
+	"name": "grain-wise",
 	"main": "worker/index.ts",
 	"compatibility_date": "2025-04-24",
 	"assets": {
